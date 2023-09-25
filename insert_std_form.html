@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #edede9;
+            margin: 0;
+            padding: 0;
+        }
+        form {
+            background-color: #edede9;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 50px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label, input[type="text"] {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #edede9;
+            border-radius: 5px;
+        }
+        input[type="submit"], input[type="reset"] {
+            background-color: #d5bdaf;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #d5bdaf;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="insert_std.php">
+        <h2>กรอกข้อมูลนักศึกษา</h2>
+        <label for="id">ID:</label>
+        <input type="text" name="id" id="id">
+
+        <label for="en_name">ชื่อ (ภาษาอังกฤษ):</label>
+        <input type="text" name="en_name" id="en_name">
+
+        <label for="en_surname">นามสกุล (ภาษาอังกฤษ):</label>
+        <input type="text" name="en_surname" id="en_surname">
+
+        <label for="th_name">ชื่อ (ภาษาไทย):</label>
+        <input type="text" name="th_name" id="th_name">
+
+        <label for="th_surname">นามสกุล (ภาษาไทย):</label>
+        <input type="text" name="th_surname" id="th_surname">
+
+        <label for="major_code">สาขา:</label>
+        <input type="text" name="major_code" id="major_code">
+
+        <label for="email">อีเมล:</label>
+        <input type="text" name="email" id="email">
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
